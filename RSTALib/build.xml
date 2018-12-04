@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="SiebelStudio" default="run" basedir=".">
+
+<target name="run" description="bundle javadoc in a jar">
+  <jar basedir="dist/javadoc" destfile="dist/javadoc.jar"/>
+</target>
+</project>

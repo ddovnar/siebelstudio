@@ -1,0 +1,2 @@
+set jdkpath=c:\work\programs\jdk1.7.0_17\bin\
+start %jdkpath%javaw.exe -cp ".;lib/log4j.jar;.\lib\autocomplete.jar;.\lib\rsyntaxtextarea.jar;.\lib\Siebel.jar;.\lib\SiebelJI_rus.jar;.\lib\rstalangsupp.jar;.\lib\js-14.jar;SiebelStudio.jar" side.AppMain

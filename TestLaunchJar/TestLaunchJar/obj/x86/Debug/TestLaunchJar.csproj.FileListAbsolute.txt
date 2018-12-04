@@ -1,0 +1,5 @@
+C:\Users\DovnarDmitriy\Documents\SharpDevelop Projects\TestLaunchJar\TestLaunchJar\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\DovnarDmitriy\Documents\SharpDevelop Projects\TestLaunchJar\TestLaunchJar\bin\Debug\Siebel Studio.exe
+C:\Users\DovnarDmitriy\Documents\SharpDevelop Projects\TestLaunchJar\TestLaunchJar\bin\Debug\Siebel Studio.pdb
+C:\Users\DovnarDmitriy\Documents\SharpDevelop Projects\TestLaunchJar\TestLaunchJar\obj\x86\Debug\Siebel Studio.exe
+C:\Users\DovnarDmitriy\Documents\SharpDevelop Projects\TestLaunchJar\TestLaunchJar\obj\x86\Debug\Siebel Studio.pdb

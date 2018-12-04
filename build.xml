@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="SiebelStudio" default="run" basedir=".">
+	<description>SiebelStudio build file</description>
+
+	<property name="version"    value="1.0.0"/>
+	<property name="source-dir" location="src"/>
+	<property name="class-dir"  location="bin"/>
+	<property name="lib-dir"  location="lib"/>
+	<property name="dist-dir"   location="dist"/>
+	<property name="java-level" location="1.6"/>
+
+	<path id="classpath">
+		<fileset dir="${lib-dir}">
+          <include name="**/*.jar" />
+       </fileset>
+	</path>
+
+	<target name="compile" description="Compile the source">
+		<delete includeEmptyDirs="true" quiet="true" dir="${class-dir}"/>
+		<mkdir dir="${class-dir}"/>
+		<echo message="Using Java version ${ant.java.version}.${java-level} + ${ant.java.version}"/>
+		<javac srcdir="${source-dir}" destdir="${class-dir}"
+			deprecation="yes"
+			includeantruntime="false">
+			<classpath refid="classpath" />
+		</javac>
+
+		<copy todir="${class-dir}/side/images" flatten="true">
+    		<fileset dir="${source-dir}/side/images">
+        		<include name="**/*.*"/>
+    		</fileset>
+		</copy>
+		<copy todir="${class-dir}/side/scheme" flatten="true">
+    		<fileset dir="${source-dir}/side/scheme">
+        		<include name="**/*.*"/>
+    		</fileset>
+		</copy>
+	</target>
+
+	<target name="run" description="Running application" depends="compile">
+		<java classname="side.AppMain" fork="true">
+			<classpath path="${class-dir}"/>
+			<classpath refid="classpath" />
+		</java>
+	</target>
+	
+	<target name="test" description="Running application">
+		<copy todir="${class-dir}/side/images" flatten="true">
+    		<fileset dir="${source-dir}/side/images">
+        		<include name="**/*.*"/>
+    		</fileset>
+		</copy>
+		<copy todir="${class-dir}/side/scheme" flatten="true">
+    		<fileset dir="${source-dir}/side/scheme">
+        		<include name="**/*.*"/>
+    		</fileset>
+		</copy>
+		
+		<java classname="side.AppMain" fork="true">
+			<classpath path="${class-dir}"/>
+			<classpath refid="classpath" />
+		</java>
+	</target>
+	
+	<target name="SifImporter" description="Running application" depends="compile">
+		<java classname="side.sifimp.SifImporter" fork="true">
+			<classpath path="${class-dir}"/>
+			<classpath refid="classpath" />
+		</java>
+	</target>
+</project>
+

@@ -28,16 +28,16 @@ Using this tool, you will receive:
 * Acceleration in the implementation of business objectives
 * Written script will be maximum debugged and prepared for transfer to production
 
-[[/assets/screenshot/1.png]]
+![Screenshot](/assets/screenshot/1.png)
 
-[[/assets/screenshot/2.png]]
+![Screenshot](/assets/screenshot/2.png)
 
-[[/assets/screenshot/3.png]]
+![Screenshot](/assets/screenshot/3.png)
 
-[[/assets/screenshot/4.png]]
+![Screenshot](/assets/screenshot/4.png)
 
-[[/assets/screenshot/5.png]]
+![Screenshot](/assets/screenshot/5.png)
 
-[[/assets/screenshot/6.png]]
+![Screenshot](/assets/screenshot/6.png)
 
-[[/assets/screenshot/7.png]]
+![Screenshot](/assets/screenshot/7.png)

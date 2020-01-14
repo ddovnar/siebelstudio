@@ -1,4 +1,4 @@
-# About
+# About Siebel Studio
 
 [![CircleCI](https://circleci.com/gh/heroku/java-getting-started.svg?style=svg)]
 
